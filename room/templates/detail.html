@@ -1,0 +1,13 @@
+<h1>방이름</h1>
+{{ room_detail.title }}
+
+<h2>약속시간</h2>
+{{ room_detail.time }}
+
+<h2>약속내용</h2>
+{{ room_detail.body }}
+
+<h3>인증하기</h3>
+{% if room_detail.confirm %}
+  <img src="{{room_detail.confirm.url}}" alt="" height="600">
+{% endif %}

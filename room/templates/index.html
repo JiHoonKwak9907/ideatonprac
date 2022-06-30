@@ -1,0 +1,11 @@
+<h1>캐밋</h1>
+
+{% for post in posts%}
+  <a href="{% url 'detail' post.id %}"><h2>방: {{post.title}}</h2></a>
+  <h3>방만들어진 시간: {{post.date}}</h3>
+  <h3>약속시간: {{post.time}}</h3>
+  <h4>약속내용: {{post.body}}</h4>
+{% endfor %}
+
+
+<a href="{% url 'create' %}">방 만들기</a>

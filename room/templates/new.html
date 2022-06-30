@@ -1,0 +1,20 @@
+<form action="{% url 'create' %}" method = "POST">
+{% csrf_token %}
+  <div>
+    <label for="title">방이름</label><br/>
+    <input type ="text" name="title" id="title">
+  </div>
+  <div>
+    <label for="body">방설명</label><br/>
+    <input type ="text" name="body" id="body">
+  </div>
+  <div>
+    <label for="time">만남시간</label><br/>
+    <input type ="text" name="time" id="time">
+  </div>
+  <div>
+    <label for="confirm">인증하기</label><br/>
+    <input type ="file" name="confirm" id="confirm">
+  </div>
+  <input type="submit" value="방 생성하기">
+</form>
